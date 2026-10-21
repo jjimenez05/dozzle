@@ -29,6 +29,7 @@ describe("iconSlugForImage", () => {
     ["cr.fluentbit.io/fluent/fluent-bit:3.2", "fluent-bit"],
     ["ghcr.io/browserless/chromium:latest", "browserless"],
     ["ghcr.io/jokob-sk/netalertx:latest", "netalertx"],
+    ["apache/airflow:latest", "apache-airflow"],
   ])("resolves %s", (image, slug) => {
     expect(iconSlugForImage(image)).toBe(slug);
   });
